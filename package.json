@@ -4,7 +4,8 @@
   "description": "Web para el semillero de investigación SIIMA de las UTS",
   "main": "index.js",
   "scripts": {
-    "mobile": "sass --watch ./src/styles/sass/styles.scss:./src/styles/css/styles.css"
+    "mobile": "sass --watch ./src/styles/sass/styles.scss:./src/styles/css/styles.css",
+    "desktop": "sass --watch ./src/styles/sass/desktop.scss:./src/styles/css/desktop.css"
   },
   "author": "Ivan Daniel Cuevas <ivandaniel1224@gmail.com>",
   "license": "MIT",

@@ -1,22 +1,24 @@
 /*===Colors===*/
+$primary-color: #845ec2;
+$second-color: #296073;
+$third-color: #3596b5;
+$fourth-color: #adc5cf;
+$text-color: #000;
+
 /*===Global===*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
   line-height: 1.5;
   scroll-behavior: smooth;
 }
-
 .container {
   width: 90%;
   max-width: 99.2rem;
   margin: 0 auto;
 }
-
-/*# sourceMappingURL=styles.css.map */
