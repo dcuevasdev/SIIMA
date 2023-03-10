@@ -19,4 +19,22 @@ html {
   margin: 0 auto;
 }
 
+/*===Header===*/
+.header__button {
+  display: none;
+}
+.header__nav {
+  position: relative;
+  top: 0;
+  left: 10px;
+  display: block;
+  width: 36rem;
+  height: 2.4rem;
+}
+.header__nav-list {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*# sourceMappingURL=desktop.css.map */

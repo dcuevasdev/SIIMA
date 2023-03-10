@@ -1,0 +1,63 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.4rem;
+  &__logo {
+    cursor: pointer;
+    img {
+      width: 12rem;
+    }
+  }
+  &__button {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    .button__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../assets/icons/menu.png");
+      background-repeat: repeat;
+      background-size: 100%;
+    }
+  }
+  &__nav {
+    position: fixed;
+    top: 8.5rem;
+    left: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: left 0.3s;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      width: 100%;
+      font-size: 1.6rem;
+      text-align: center;
+      list-style: none;
+      a {
+        color: $text-color;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      a:hover {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  .menu-visible {
+    left: 0;
+  }
+}
