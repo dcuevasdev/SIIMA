@@ -14,3 +14,30 @@ itemsMenu.forEach((item) => {
     navMenu.classList.remove("menu-visible");
   });
 });
+
+//Carrousel
+document.slider.src = "./src/assets/pictures/Grupal.jpg";
+window.addEventListener("load", () => {
+  const images = [];
+  images[0] = "./src/assets/pictures/Grupal_1.jpg";
+  images[1] = "./src/assets/pictures/Grupal_2.jpg";
+  images[2] = "./src/assets/pictures/Grupal_3.jpg";
+  images[3] = "./src/assets/pictures/Grupal_4.jpg";
+  images[4] = "./src/assets/pictures/Grupal.jpg";
+  images[5] = "./src/assets/pictures/Grupal_5.jpg";
+  images[6] = "./src/assets/pictures/Grupal_6.jpg";
+  images[7] = "./src/assets/pictures/Grupal_7.jpg";
+
+  let indexImages = 0;
+  const changePhoto = () => {
+    document.slider.src = images[indexImages];
+
+    if (indexImages < images.length - 1) {
+      indexImages++;
+    } else {
+      indexImages = 0;
+    }
+  };
+
+  setInterval(changePhoto, 3000);
+});
