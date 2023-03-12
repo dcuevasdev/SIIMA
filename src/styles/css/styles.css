@@ -187,4 +187,37 @@ html {
   text-align: end;
 }
 
+.identity {
+  margin-top: 3.2rem;
+}
+.identity__title {
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #845ec2;
+}
+.identity__container-mission, .identity__container-vision {
+  margin-bottom: 1.6rem;
+}
+.identity__mission, .identity__vision {
+  margin-bottom: 1.6rem;
+}
+.identity__mission-title, .identity__vision-title {
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #845ec2;
+}
+.identity__mission-image, .identity__vision-image {
+  width: 50%;
+  margin: 0 auto;
+}
+.identity__mission-image img, .identity__vision-image img {
+  width: 100%;
+}
+.identity__mission-description, .identity__vision-description {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
 /*# sourceMappingURL=styles.css.map */

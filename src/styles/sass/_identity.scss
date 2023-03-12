@@ -1,0 +1,34 @@
+.identity {
+  margin-top: 3.2rem;
+  &__title {
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+    text-align: center;
+    color: $primary-color;
+  }
+  &__container-mission,
+  &__container-vision {
+    margin-bottom: 1.6rem;
+  }
+  &__mission,
+  &__vision {
+    margin-bottom: 1.6rem;
+    &-title {
+      margin-bottom: 0.8rem;
+      font-size: 2rem;
+      text-align: center;
+      color: $primary-color;
+    }
+    &-image {
+      width: 50%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+    &-description {
+      font-size: 1.6rem;
+      text-align: justify;
+    }
+  }
+}

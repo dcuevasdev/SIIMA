@@ -33,3 +33,32 @@
   width: 72rem;
   margin: 3.2rem auto 0;
 }
+
+/*===Identity===*/
+.identity {
+  &__container-mission,
+  &__container-vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 0;
+  }
+  &__mission,
+  &__vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-image {
+      width: 80%;
+    }
+    &-description {
+      width: 40%;
+    }
+  }
+  &__vision {
+    .identity__container-vision {
+      order: 2;
+    }
+  }
+}
