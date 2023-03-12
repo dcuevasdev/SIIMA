@@ -74,4 +74,9 @@ html {
   order: 2;
 }
 
+/*===Investigation===*/
+.investigation__container {
+  justify-content: space-evenly;
+}
+
 /*# sourceMappingURL=desktop.css.map */

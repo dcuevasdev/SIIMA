@@ -220,4 +220,54 @@ html {
   text-align: justify;
 }
 
+.investigation {
+  margin-top: 3.2rem;
+  text-align: center;
+}
+.investigation__title {
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  color: #845ec2;
+}
+.investigation__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.investigation__container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 32rem;
+  height: 8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+.investigation__container-card p {
+  font-size: 1.6rem;
+}
+.investigation__container .dark {
+  border: 1px solid #296073;
+}
+.investigation__container .middle {
+  border: 1px solid #3596b5;
+}
+.investigation__container .light {
+  border: 1px solid #adc5cf;
+}
+.investigation__container-card:hover p {
+  color: #fff;
+}
+.investigation__container .dark:hover {
+  background-color: #296073;
+}
+.investigation__container .middle:hover {
+  background-color: #3596b5;
+}
+.investigation__container .light:hover {
+  background-color: #adc5cf;
+}
+
 /*# sourceMappingURL=styles.css.map */
