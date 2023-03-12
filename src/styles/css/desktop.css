@@ -37,4 +37,12 @@ html {
   align-items: center;
 }
 
+/*===About===*/
+.about {
+  flex-direction: row;
+}
+.about__text {
+  width: 40%;
+}
+
 /*# sourceMappingURL=desktop.css.map */

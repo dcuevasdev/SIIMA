@@ -1,0 +1,46 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 3.2rem;
+  &__text {
+    width: 100%;
+    text-align: center;
+    &-title {
+      margin-bottom: 0.8rem;
+      font-size: 2rem;
+      color: $primary-color;
+    }
+    &-content {
+      margin-bottom: 1.6rem;
+      font-size: 1.6rem;
+      text-align: justify;
+    }
+    &-button {
+      display: block;
+      width: 100%;
+      height: 3.2rem;
+      margin-bottom: 1.6rem;
+      border-radius: 0.8rem;
+      font-size: 1.6rem;
+      text-decoration: none;
+      line-height: 2;
+      color: #fff;
+      background: $second-color;
+      cursor: pointer;
+    }
+    &-button:hover {
+      border: 0.2rem solid $second-color;
+      color: $second-color;
+      background: none;
+    }
+  }
+  &__image {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
