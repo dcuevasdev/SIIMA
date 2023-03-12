@@ -1,8 +1,12 @@
+const API_QUOTES = "https://api.api-ninjas.com/v1/quotes?category=education";
+
 const buttonMenu = document.querySelector(".header__button");
 const navMenu = document.querySelector(".header__nav");
 const itemsMenu = [...document.querySelectorAll(".list__item")];
 
 const slider = document.querySelector(".carrousel__img-photo");
+
+const quoteSection = document.querySelector(".quote");
 
 //Toggle Menu
 buttonMenu.addEventListener("click", () => {
@@ -41,3 +45,35 @@ window.addEventListener("load", () => {
 
   setInterval(changePhoto, 3000);
 });
+
+//Quotes
+async function fetchData(urlApi, obj) {
+  const response = await fetch(urlApi, obj);
+  const data = await response.json();
+  return data;
+}
+
+const generateQuote = async () => {
+  try {
+    const quote = await fetchData(API_QUOTES, {
+      method: "GET",
+      headers: { "X-Api-Key": key },
+      contentType: "application/json",
+    });
+
+    let toRender = quote
+      .map((element) => {
+        return `
+        <p class="quote__phrase">"${element.quote}"</p>
+        <span class="quote__author">${element.author}</span>
+      `;
+      })
+      .join("");
+
+    quoteSection.innerHTML = toRender;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+generateQuote();
