@@ -133,12 +133,14 @@ html {
 }
 
 .about {
+  margin-top: 3.2rem;
+}
+.about__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 2.4rem;
-  margin-top: 3.2rem;
 }
 .about__text {
   width: 100%;
@@ -331,6 +333,76 @@ html {
   display: flex;
   gap: 0.8rem;
   color: #3596b5;
+}
+
+.contact {
+  margin-top: 3.2rem;
+}
+.contact__motivation {
+  margin-bottom: 3.2rem;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+.contact__motivation b {
+  color: #845ec2;
+}
+.contact__form {
+  margin: 0 auto;
+  padding: 2.4rem;
+  min-width: 25rem;
+  max-width: 72rem;
+  border-radius: 1.6rem;
+  background-color: rgba(132, 94, 194, 0.2);
+}
+.contact__form-card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto 2.4rem;
+}
+.contact__form-card label {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #296073;
+}
+.contact__form-card input {
+  height: 3.2rem;
+}
+.contact__form-card textarea {
+  height: 6.4rem;
+}
+.contact__form-card input,
+.contact__form-card textarea {
+  padding: 1.6rem;
+  border: none;
+  border-radius: 0.8rem;
+  outline: none;
+}
+.contact__form-card input:valid {
+  border: 0.1rem solid green;
+}
+.contact__form-card input:focus {
+  outline: none;
+  border: 0.1rem solid yellow;
+}
+.contact__form-button {
+  display: block;
+  width: 50%;
+  height: 4rem;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #296073;
+  cursor: pointer;
+}
+.contact__form-button:hover {
+  border: 1px solid #296073;
+  color: #296073;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .footer {

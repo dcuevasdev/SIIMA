@@ -22,7 +22,9 @@
 
 /*===About===*/
 .about {
-  flex-direction: row;
+  &__container {
+    flex-direction: row;
+  }
   &__text {
     width: 40%;
   }

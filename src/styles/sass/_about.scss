@@ -1,10 +1,12 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2.4rem;
   margin-top: 3.2rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4rem;
+  }
   &__text {
     width: 100%;
     text-align: center;

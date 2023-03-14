@@ -63,19 +63,21 @@
     </section>
     <div class="container">
       <section class="about home">
-        <div class="about__text">
-          <h2 class="about__text-title">¿Quiénes somos?</h2>
-          <p class="about__text-content">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-          <a class="about__text-button" href="#">Únete </a>
+        <div class="about__container">
+          <div class="about__text">
+            <h2 class="about__text-title">¿Quiénes somos?</h2>
+            <p class="about__text-content">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <a class="about__text-button" href="#">Únete </a>
+          </div>
+          <figure class="about__image">
+            <img src="./src/assets/illustrations/Engineering_team.svg" alt="" />
+          </figure>
         </div>
-        <figure class="about__image">
-          <img src="./src/assets/illustrations/Engineering_team.svg" alt="" />
-        </figure>
       </section>
       <section class="quote home"></section>
       <section class="identity home">
@@ -217,8 +219,78 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="contact inactive"></section>
-      <footer class="footer">
+      <section id="contact" class="contact inactive">
+        <p class="contact__motivation">
+          ¡Únete a nuestro
+          <b
+            >semillero de investigación en ingeniería y mecánica automotriz
+            (SIIMA)!</b
+          >
+          Estamos comprometidos a proporcionar a nuestros miembros la
+          oportunidad de desarrollar sus habilidades y conocimientos en el
+          ámbito de la ingeniería y mecánica automotriz. No importa si eres un
+          principiante o un profesional experimentado, nuestro equipo de
+          investigación te brindará la oportunidad de desarrollar tus
+          habilidades y conocimientos. ¡Únete hoy y comienza a innovar con
+          nosotros!
+        </p>
+        <form action="" method="post" class="contact__form">
+          <div class="contact__form-name contact__form-card">
+            <label for="name">Nombre</label>
+            <input
+              required
+              pattern="[a-zA-Z\s]{2,30}"
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="name"
+            />
+          </div>
+          <div class="contact__form-email contact__form-card">
+            <label for="mail">E-mail</label>
+            <input
+              required
+              type="email"
+              name="mail"
+              id="mail"
+              autocomplete="email"
+            />
+          </div>
+          <div class="contact__form-program contact__form-card">
+            <label for="study">Programa académico</label>
+            <input
+              required
+              pattern="[a-zA-Z\s]{2,30}"
+              type="text"
+              name="study"
+              id="study"
+            />
+          </div>
+          <div class="contact__form-institute contact__form-card">
+            <label for="instutute">Institución</label>
+            <input
+              required
+              pattern="[a-zA-Z\s]{2,30}"
+              type="text"
+              name="instutute"
+              id="instutute"
+            />
+          </div>
+          <div class="contact__form-presentation contact__form-card">
+            <label for="presentation">Preséntate</label>
+            <textarea
+              name="presentation"
+              id="presentation"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <button class="contact__form-button" type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
         <div class="footer__social">
           <a href="https://www.facebook.com/semilleroSIIMA2019" target="_blank">
             <i class="facebook"></i>
@@ -250,7 +322,7 @@
             >.
           </p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

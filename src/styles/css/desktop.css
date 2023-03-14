@@ -46,7 +46,7 @@ html {
 }
 
 /*===About===*/
-.about {
+.about__container {
   flex-direction: row;
 }
 .about__text {

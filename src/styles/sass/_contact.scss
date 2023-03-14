@@ -1,0 +1,71 @@
+.contact {
+  margin-top: 3.2rem;
+  &__motivation {
+    margin-bottom: 3.2rem;
+    font-size: 1.6rem;
+    text-align: justify;
+    b {
+      color: $primary-color;
+    }
+  }
+  &__form {
+    margin: 0 auto;
+    padding: 2.4rem;
+    min-width: 25rem;
+    max-width: 72rem;
+    border-radius: 1.6rem;
+    background-color: rgba($color: $primary-color, $alpha: 0.2);
+    &-card {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto 2.4rem;
+      label {
+        margin-bottom: 0.8rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $second-color;
+      }
+      input {
+        height: 3.2rem;
+      }
+      textarea {
+        height: 6.4rem;
+      }
+      input,
+      textarea {
+        padding: 1.6rem;
+        border: none;
+        border-radius: 0.8rem;
+        outline: none;
+      }
+    }
+    &-card {
+      input:valid {
+        border: 0.1rem solid green;
+      }
+      input:focus {
+        outline: none;
+        border: 0.1rem solid yellow;
+      }
+    }
+    &-button {
+      display: block;
+      width: 50%;
+      height: 4rem;
+      margin: 0 auto;
+      border: none;
+      border-radius: 0.8rem;
+      font-size: 1.6rem;
+      color: #fff;
+      background-color: $second-color;
+      cursor: pointer;
+    }
+    &-button:hover {
+      border: 1px solid $second-color;
+      color: $second-color;
+      background-color: #fff;
+      cursor: pointer;
+    }
+  }
+}
