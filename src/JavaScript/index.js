@@ -4,6 +4,10 @@ const buttonMenu = document.querySelector(".header__button");
 const navMenu = document.querySelector(".header__nav");
 const itemsMenu = [...document.querySelectorAll(".list__item")];
 
+const homeSections = [...document.querySelectorAll(".home")];
+const listContact = document.querySelector(".list__contact");
+const contactSection = document.querySelector(".contact");
+
 const slider = document.querySelector(".carrousel__img-photo");
 
 const quoteSection = document.querySelector(".quote");
@@ -17,6 +21,16 @@ itemsMenu.forEach((item) => {
   item.addEventListener("click", () => {
     navMenu.classList.remove("menu-visible");
   });
+});
+
+//Redirection Menu
+listContact.addEventListener("click", () => {
+  homeSections.forEach((section) => {
+    section.classList.add("inactive");
+  });
+
+  contactSection.classList.remove("inactive");
+  contactSection.classList.add("active");
 });
 
 //Carrousel

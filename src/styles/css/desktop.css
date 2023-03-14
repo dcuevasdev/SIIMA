@@ -19,6 +19,14 @@ html {
   margin: 0 auto;
 }
 
+.inactive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 /*===Header===*/
 .header__button {
   display: none;
