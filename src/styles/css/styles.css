@@ -382,7 +382,8 @@ html {
 .contact__form-card input:valid {
   border: 0.1rem solid green;
 }
-.contact__form-card input:focus {
+.contact__form-card input:focus,
+.contact__form-card textarea:focus {
   outline: none;
   border: 0.1rem solid yellow;
 }
@@ -403,6 +404,9 @@ html {
   color: #296073;
   background-color: #fff;
   cursor: pointer;
+}
+.contact #mailTo {
+  opacity: 0;
 }
 
 .footer {

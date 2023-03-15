@@ -44,7 +44,8 @@
       input:valid {
         border: 0.1rem solid green;
       }
-      input:focus {
+      input:focus,
+      textarea:focus {
         outline: none;
         border: 0.1rem solid yellow;
       }
@@ -67,5 +68,8 @@
       background-color: #fff;
       cursor: pointer;
     }
+  }
+  #mailTo {
+    opacity: 0;
   }
 }

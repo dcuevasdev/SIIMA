@@ -12,6 +12,8 @@ const slider = document.querySelector(".carrousel__img-photo");
 
 const quoteSection = document.querySelector(".quote");
 
+const form = document.querySelector("#form");
+
 //Toggle Menu
 buttonMenu.addEventListener("click", () => {
   navMenu.classList.toggle("menu-visible");
@@ -91,3 +93,23 @@ const generateQuote = async () => {
 };
 
 generateQuote();
+
+//Send Form
+form.addEventListener("submit", infoSubmit);
+
+async function infoSubmit(event) {
+  event.preventDefault();
+  const formData = new FormData(this);
+  const response = await fetch(this.action, {
+    method: this.method,
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    this.reset();
+    alert("Gracias por tú mensaje");
+  }
+}
