@@ -13,6 +13,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   width: 90%;
   max-width: 99.2rem;
@@ -282,6 +288,7 @@ html {
 
 .projects {
   margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
 }
 .projects__title {
   margin-bottom: 1.6rem;
@@ -337,6 +344,7 @@ html {
 
 .contact {
   margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
 }
 .contact__motivation {
   margin-bottom: 3.2rem;
@@ -410,7 +418,7 @@ html {
 }
 
 .footer {
-  margin-top: 3.2rem;
+  margin-top: auto;
   text-align: center;
 }
 .footer__social {

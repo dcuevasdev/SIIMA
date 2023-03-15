@@ -7,6 +7,7 @@ const itemsMenu = [...document.querySelectorAll(".list__item")];
 const homeSections = [...document.querySelectorAll(".home")];
 const listContact = document.querySelector(".list__contact");
 const contactSection = document.querySelector(".contact");
+const joinButton = document.querySelector(".about__text-button");
 
 const slider = document.querySelector(".carrousel__img-photo");
 
@@ -27,6 +28,14 @@ itemsMenu.forEach((item) => {
 
 //Redirection Menu
 listContact.addEventListener("click", () => {
+  homeSections.forEach((section) => {
+    section.classList.add("inactive");
+  });
+
+  contactSection.classList.remove("inactive");
+  contactSection.classList.add("active");
+});
+joinButton.addEventListener("click", () => {
   homeSections.forEach((section) => {
     section.classList.add("inactive");
   });
