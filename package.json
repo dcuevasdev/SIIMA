@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "dev": "webpack --mode development",
     "mobile": "sass --watch ./src/styles/sass/styles.scss:./src/styles/css/styles.css",
     "desktop": "sass --watch ./src/styles/sass/desktop.scss:./src/styles/css/desktop.css"
   },
@@ -18,6 +19,7 @@
     "@babel/plugin-transform-runtime": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
     "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1"
   }

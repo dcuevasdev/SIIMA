@@ -98,7 +98,7 @@ function homePage() {
     try {
       const quote = await fetchData(API_QUOTES, {
         method: "GET",
-        headers: { "X-Api-Key": key },
+        headers: { "X-Api-Key": "n4fK8uwcqIBvQ4GPTWR/hg==qlCRJTjW0Mx2Oeqt" },
         contentType: "application/json",
       });
 
