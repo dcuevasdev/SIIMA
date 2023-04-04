@@ -18,8 +18,6 @@ function navigator() {
     : homePage();
 }
 
-const API_QUOTES = "https://api.api-ninjas.com/v1/quotes?category=education";
-
 //======Header======//
 const buttonMenu = document.querySelector(".header__button");
 const navMenu = document.querySelector(".header__nav");
@@ -91,6 +89,7 @@ function homePage() {
   });
 
   //Quotes
+  const API = process.env.API_QUOTES;
   async function fetchData(urlApi, obj) {
     const response = await fetch(urlApi, obj);
     const data = await response.json();
@@ -99,9 +98,9 @@ function homePage() {
 
   const generateQuote = async () => {
     try {
-      const quote = await fetchData(API_QUOTES, {
+      const quote = await fetchData(API, {
         method: "GET",
-        headers: { "X-Api-Key": "n4fK8uwcqIBvQ4GPTWR/hg==qlCRJTjW0Mx2Oeqt" },
+        headers: { "X-Api-Key": process.env.API_KEY },
         contentType: "application/json",
       });
 
