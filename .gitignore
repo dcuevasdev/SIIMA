@@ -103,5 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
+# Sass cache
+.sass-cache/
+
 #Secret.js (API KEY)
 src/JavaScript/secret.js
