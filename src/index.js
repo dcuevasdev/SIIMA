@@ -89,7 +89,7 @@ function homePage() {
   });
 
   //Quotes
-  const API = process.env.API_QUOTES;
+  const API = "https://api.api-ninjas.com/v1/quotes?category=education";
   async function fetchData(urlApi, obj) {
     const response = await fetch(urlApi, obj);
     const data = await response.json();
