@@ -1,73 +1,75 @@
-@import "_globalVariables";
+@media (min-width: 992px) {
+  @import "_globalVariables";
 
-/*===Header===*/
-.header {
-  &__button {
-    display: none;
+  /*===Header===*/
+  .header {
+    &__button {
+      display: none;
+    }
+    &__nav {
+      position: relative;
+      top: 0;
+      left: 10px;
+      display: block;
+      width: 58rem;
+      height: 2.4rem;
+      &-list {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
   }
-  &__nav {
-    position: relative;
-    top: 0;
-    left: 10px;
-    display: block;
-    width: 58rem;
-    height: 2.4rem;
-    &-list {
+
+  /*===About===*/
+  .about {
+    &__container {
       flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
     }
-  }
-}
-
-/*===About===*/
-.about {
-  &__container {
-    flex-direction: row;
-  }
-  &__text {
-    width: 40%;
-  }
-}
-
-/*===Quote===*/
-.quote {
-  width: 72rem;
-  margin: 3.2rem auto 0;
-}
-
-/*===Identity===*/
-.identity {
-  &__container-mission,
-  &__container-vision {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    margin-bottom: 0;
-  }
-  &__mission,
-  &__vision {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-image {
-      width: 80%;
-    }
-    &-description {
+    &__text {
       width: 40%;
     }
   }
-  &__vision {
-    .identity__container-vision {
-      order: 2;
+
+  /*===Quote===*/
+  .quote {
+    width: 72rem;
+    margin: 3.2rem auto 0;
+  }
+
+  /*===Identity===*/
+  .identity {
+    &__container-mission,
+    &__container-vision {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+      margin-bottom: 0;
+    }
+    &__mission,
+    &__vision {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-image {
+        width: 80%;
+      }
+      &-description {
+        width: 40%;
+      }
+    }
+    &__vision {
+      .identity__container-vision {
+        order: 2;
+      }
     }
   }
-}
 
-/*===Investigation===*/
-.investigation {
-  &__container {
-    justify-content: space-evenly;
+  /*===Investigation===*/
+  .investigation {
+    &__container {
+      justify-content: space-evenly;
+    }
   }
 }
