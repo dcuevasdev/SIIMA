@@ -25,6 +25,10 @@ body {
   margin: 0 auto;
 }
 
+.body__hidden {
+  overflow: hidden;
+}
+
 .inactive {
   display: none;
 }

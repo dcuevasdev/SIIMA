@@ -23,7 +23,7 @@
       type="image/x-icon"
     />
     <script src="./src/JavaScript/secret.js" defer></script>
-    <script src="./src/JavaScript/index.js" defer></script>
+    <script src="./src/JavaScript/index.js" defer type="module"></script>
   </head>
   <body>
     <div class="container">
@@ -40,9 +40,15 @@
         </button>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="list__item"><a href="./index.html">Inicio</a></li>
-            <li class="list__item"><a href="#">Investigaciones</a></li>
-            <li class="list__item"><a href="#">Eventos</a></li>
+            <li class="list__item"><a href="">Inicio</a></li>
+            <li class="list__item"><a href="#ingenero">Ingenero</a></li>
+            <li class="list__item">
+              <a href="#projectInvestigations">Proyectos</a>
+            </li>
+            <li class="list__item"><a href="#testimonials">Testimonios</a></li>
+            <li class="list__item">
+              <a href="#investigators">Investigadores</a>
+            </li>
             <li class="list__item list__contact">
               <a href="#contact">Contacto</a>
             </li>
@@ -50,7 +56,7 @@
         </nav>
       </header>
     </div>
-    <section class="carrousel home">
+    <section id="carrousel" class="carrousel">
       <figure class="carrousel__img">
         <img name="slider" class="carrousel__img-photo" alt="Fotos grupales" />
         <div class="overlay"></div>
@@ -61,163 +67,189 @@
         </h1>
       </div>
     </section>
-    <div class="container">
-      <section class="about home">
-        <div class="about__container">
-          <div class="about__text">
-            <h2 class="about__text-title">¿Quiénes somos?</h2>
-            <p class="about__text-content">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+    <div class="container" id="main__container">
+      <section id="home" class="home">
+        <section class="about">
+          <div class="about__container">
+            <div class="about__text">
+              <h2 class="about__text-title">¿Quiénes somos?</h2>
+              <p class="about__text-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <a class="about__text-button" href="#contact">Únete </a>
+            </div>
+            <figure class="about__image">
+              <img
+                src="./src/assets/illustrations/Engineering_team.svg"
+                alt=""
+              />
+            </figure>
+          </div>
+        </section>
+        <section class="quote"></section>
+        <section class="identity">
+          <h2 class="identity__title">Nuestra misión y visión</h2>
+          <div class="identity__mission">
+            <div class="identity__container-mission">
+              <h2 class="identity__mission-title">Misión</h2>
+              <figure class="identity__mission-image">
+                <img
+                  src="./src/assets/illustrations/Mission.svg"
+                  alt="Imagen mision"
+                />
+              </figure>
+            </div>
+            <p class="identity__mission-description">
+              El semillero de Investigación en Ingeniería y Mecánica Automotriz
+              (SIIMA), es un grupo interdisciplinario, adscrito a la facultad de
+              Ciencias Naturales e Ingenierías de las Unidades Tecnológicas de
+              Santander, que orienta su quehacer académico en torno al
+              fortalecimiento del proceso de formación profesional, teniendo
+              como punto de partida en desarrollo de proyectos de investigación
+              contextualizados con las necesidades del sector automotriz y la
+              academia. El semillero SIIMA, fomenta la cultura investigativa del
+              programa basado en el esfuerzo personal y colectivo de sus
+              integrantes, el cual se evidenciará en participación en eventos
+              académicos de carácter regional y nacional, publicaciones
+              nacionales e internacionales y cursos de actualización en las
+              líneas de investigación.
             </p>
-            <a class="about__text-button" href="#contact">Únete </a>
           </div>
-          <figure class="about__image">
-            <img src="./src/assets/illustrations/Engineering_team.svg" alt="" />
-          </figure>
-        </div>
-      </section>
-      <section class="quote home"></section>
-      <section class="identity home">
-        <h2 class="identity__title">Nuestra misión y visión</h2>
-        <div class="identity__mission">
-          <div class="identity__container-mission">
-            <h2 class="identity__mission-title">Misión</h2>
-            <figure class="identity__mission-image">
-              <img
-                src="./src/assets/illustrations/Mission.svg"
-                alt="Imagen mision"
-              />
-            </figure>
+          <div class="identity__vision">
+            <div class="identity__container-vision">
+              <h2 class="identity__vision-title">Visión</h2>
+              <figure class="identity__vision-image">
+                <img
+                  src="./src/assets/illustrations/vision.svg"
+                  alt="Imagen vision"
+                />
+              </figure>
+            </div>
+            <p class="identity__vision-description">
+              El semillero de investigación SIIMA será reconocido en las
+              Unidades Tecnológicas de Santander como un espacio de generación
+              de conocimiento y promoción de la investigación formativa
+              relacionada con la ingeniera automotriz a través de Proyectos de
+              grado, Proyectos de Investigación, Artículos publicados y
+              Ponencias realizadas en eventos locales y nacionales.
+            </p>
           </div>
-          <p class="identity__mission-description">
-            El semillero de Investigación en Ingeniería y Mecánica Automotriz
-            (SIIMA), es un grupo interdisciplinario, adscrito a la facultad de
-            Ciencias Naturales e Ingenierías de las Unidades Tecnológicas de
-            Santander, que orienta su quehacer académico en torno al
-            fortalecimiento del proceso de formación profesional, teniendo como
-            punto de partida en desarrollo de proyectos de investigación
-            contextualizados con las necesidades del sector automotriz y la
-            academia. El semillero SIIMA, fomenta la cultura investigativa del
-            programa basado en el esfuerzo personal y colectivo de sus
-            integrantes, el cual se evidenciará en participación en eventos
-            académicos de carácter regional y nacional, publicaciones nacionales
-            e internacionales y cursos de actualización en las líneas de
-            investigación.
-          </p>
-        </div>
-        <div class="identity__vision">
-          <div class="identity__container-vision">
-            <h2 class="identity__vision-title">Visión</h2>
-            <figure class="identity__vision-image">
-              <img
-                src="./src/assets/illustrations/vision.svg"
-                alt="Imagen vision"
-              />
-            </figure>
+        </section>
+        <section class="investigation">
+          <h2 class="investigation__title">Líneas de investigación</h2>
+          <div class="investigation__container">
+            <div class="investigation__container-card dark">
+              <p>Diseño y modelamiento de maquinas y equipos</p>
+            </div>
+            <div class="investigation__container-card middle">
+              <p>Dinámica vehicular</p>
+            </div>
+            <div class="investigation__container-card light">
+              <p>Diseño y mecánica automotriz</p>
+            </div>
+            <div class="investigation__container-card light">
+              <p>Elaboración de vehículos</p>
+            </div>
+            <div class="investigation__container-card dark">
+              <p>Ingeniería de productos, equipos y dispositivos</p>
+            </div>
+            <div class="investigation__container-card middle">
+              <p>Procesos mecánicos</p>
+            </div>
           </div>
-          <p class="identity__vision-description">
-            El semillero de investigación SIIMA será reconocido en las Unidades
-            Tecnológicas de Santander como un espacio de generación de
-            conocimiento y promoción de la investigación formativa relacionada
-            con la ingeniera automotriz a través de Proyectos de grado,
-            Proyectos de Investigación, Artículos publicados y Ponencias
-            realizadas en eventos locales y nacionales.
-          </p>
-        </div>
-      </section>
-      <section class="investigation home">
-        <h2 class="investigation__title">Líneas de investigación</h2>
-        <div class="investigation__container">
-          <div class="investigation__container-card dark">
-            <p>Diseño y modelamiento de maquinas y equipos</p>
-          </div>
-          <div class="investigation__container-card middle">
-            <p>Dinámica vehicular</p>
-          </div>
-          <div class="investigation__container-card light">
-            <p>Diseño y mecánica automotriz</p>
-          </div>
-          <div class="investigation__container-card light">
-            <p>Elaboración de vehículos</p>
-          </div>
-          <div class="investigation__container-card dark">
-            <p>Ingeniería de productos, equipos y dispositivos</p>
-          </div>
-          <div class="investigation__container-card middle">
-            <p>Procesos mecánicos</p>
-          </div>
-        </div>
-      </section>
-      <section class="projects home">
-        <h1 class="projects__title">Proyectos destacados</h1>
-        <div class="projects__container">
-          <div class="projects__container-card">
-            <figure class="projects__container-card-image">
-              <img src="./src/assets/pictures/Covida.jpg" alt="Foto grupal" />
-            </figure>
-            <div class="projects__container-card-description">
-              <h3>Co-vida</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-              <div>
-                <span>Diseño</span>
-                <span>Ingeniería</span>
-                <span>3D</span>
-                <span>Social</span>
+        </section>
+        <section class="projects">
+          <h1 class="projects__title">Proyectos destacados</h1>
+          <div class="projects__container">
+            <div class="projects__container-card">
+              <figure class="projects__container-card-image">
+                <img src="./src/assets/pictures/Covida.jpg" alt="Foto grupal" />
+              </figure>
+              <div class="projects__container-card-description">
+                <h3>Co-vida</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <div>
+                  <span>Diseño</span>
+                  <span>Ingeniería</span>
+                  <span>3D</span>
+                  <span>Social</span>
+                </div>
+              </div>
+            </div>
+            <div class="projects__container-card">
+              <figure class="projects__container-card-image">
+                <img
+                  src="./src/assets/pictures/Shell-eco.jpeg"
+                  alt="Foto grupal"
+                />
+              </figure>
+              <div class="projects__container-card-description">
+                <h3>Shell eco-marathon</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <div>
+                  <span>Diseño</span>
+                  <span>Ingeniería</span>
+                  <span>Mecánica</span>
+                  <span>Elaboración</span>
+                </div>
+              </div>
+            </div>
+            <div class="projects__container-card">
+              <figure class="projects__container-card-image">
+                <img
+                  src="./src/assets/pictures/Grupal_2.jpg"
+                  alt="Foto grupal"
+                />
+              </figure>
+              <div class="projects__container-card-description">
+                <h3>Ingenero</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <div>
+                  <span>Inclusión</span>
+                  <span>Ingeniería</span>
+                  <span>Enseñanza</span>
+                  <span>Social</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="projects__container-card">
-            <figure class="projects__container-card-image">
-              <img
-                src="./src/assets/pictures/Shell-eco.jpeg"
-                alt="Foto grupal"
-              />
-            </figure>
-            <div class="projects__container-card-description">
-              <h3>Shell eco-marathon</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-              <div>
-                <span>Diseño</span>
-                <span>Ingeniería</span>
-                <span>Mecánica</span>
-                <span>Elaboración</span>
-              </div>
-            </div>
-          </div>
-          <div class="projects__container-card">
-            <figure class="projects__container-card-image">
-              <img src="./src/assets/pictures/Grupal_2.jpg" alt="Foto grupal" />
-            </figure>
-            <div class="projects__container-card-description">
-              <h3>Ingenero</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-              <div>
-                <span>Inclusión</span>
-                <span>Ingeniería</span>
-                <span>Enseñanza</span>
-                <span>Social</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
+      </section>
+      <section id="ingenero" class="ingenero inactive">
+        <h1>Ingenero</h1>
+      </section>
+      <section
+        id="projectInvestigations"
+        class="projectInvestigations inactive"
+      >
+        <h1>Projects</h1>
+      </section>
+      <section id="testimonials" class="testimonials inactive">
+        <h1>Testimonials</h1>
+      </section>
+      <section id="investigators" class="investigators inactive">
+        <h1>Investigators</h1>
       </section>
       <section id="contact" class="contact inactive">
         <p class="contact__motivation">
