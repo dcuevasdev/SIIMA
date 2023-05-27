@@ -22,9 +22,24 @@
     }
   }
   &__university {
-    margin-bottom: 3.2rem;
+    margin-bottom: 1.6rem;
     &-text {
       font-size: 1.2rem;
+      a {
+        color: $text-color;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: $second-color;
+      }
+    }
+  }
+  &__investigators {
+    margin-bottom: 3.2rem;
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
       a {
         color: $text-color;
         text-decoration: none;
